@@ -1,0 +1,17 @@
+# Kamus sederhana menggunakan dictionary
+kamus = {
+    "pisang": "buah berwarna kuning",
+    "apel": "buah berwarna merah atau hijau",
+    "jeruk": "buah berwarna oranye dan kaya vitamin C",
+    "kucing": "hewan peliharaan yang lucu",
+    "komputer": "alat elektronik untuk mengolah data"
+}
+
+# Meminta input dari pengguna
+kata = input("Masukkan kata yang ingin dicari artinya: ").lower()
+
+# Menampilkan arti kata jika ada di kamus
+if kata in kamus:
+    print(f"Arti dari '{kata}' adalah: {kamus[kata]}")
+else:
+    print(f"Maaf, kata '{kata}' tidak ditemukan dalam kamus.")
